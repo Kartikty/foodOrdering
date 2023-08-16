@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+
+}
+/* navbar:logo and image  */
+#logo{
+margin: 10px 34px;
+}
+#logo img{
+    height: 80px;
+    margin: 3px 6px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.6rem;
+}
+#navbar ul li a{
+    display: block;
+    color: white;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+
+}
+#navbar ul li a:hover{
+   color: black;
+   background-color: rgb(141, 150, 150);
+    
+}
+/* contact box */
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: 30px 10px;
+    padding: 30px 0px;
+    height: 80vh;
+    /* opacity: 0.7; */
+    background: url(../image/call.jpg.jpg) no-repeat center center/cover ;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#contact-box form{
+    width: 40%;
+
+}
+#contat-box label{
+font-size: 1.3rem;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: .5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    
+}
+.btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(44, 39, 39);
+    color: white;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 30px 20px;
+
+}
+.center{
+    text-align: center;
+}
